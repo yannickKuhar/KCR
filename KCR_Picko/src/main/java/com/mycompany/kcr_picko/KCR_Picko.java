@@ -12,6 +12,8 @@ package com.mycompany.kcr_picko;
 public class KCR_Picko {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        // System.out.println("Hello World!");
+        new MainMenu().setVisible(true);
+        // new AddNewPizza().setVisible(true);
     }
 }
