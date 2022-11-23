@@ -12,7 +12,7 @@ package com.mycompany.kcr_picko;
 public class KCR_Picko {
 
     public static void main(String[] args) {
-        // System.out.println("Hello World!");
+        // System.out.println("com.mycompany.kcr_picko.KCR_Picko.main()");
         new MainMenu().setVisible(true);
         // new AddNewPizza().setVisible(true);
     }
