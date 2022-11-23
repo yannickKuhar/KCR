@@ -5,6 +5,7 @@
 package com.mycompany.kcr_picko;
 
 import java.util.Objects;
+import java.util.ArrayList;
 
 /**
  *
@@ -12,21 +13,31 @@ import java.util.Objects;
  */
 public class Pizza {
     private String name;
-    private String addon;
+    private ArrayList<String> addons;
     private String size;
+    private double cena;
 
-    public Pizza(String name, String addon, String size) {
+    public Pizza(String name, ArrayList<String> addons, String size, double cena) {
         this.name = name;
-        this.addon = addon;
+        this.addons = addons;
         this.size = size;
+        this.cena = cena;
+    }
+
+    public ArrayList<String> getAddons() {
+        return addons;
+    }
+
+    public double getCena() {
+        return cena;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getAddon() {
-        return addon;
+    public ArrayList<String> getAddon() {
+        return addons;
     }
 
     public String getSize() {
@@ -37,8 +48,8 @@ public class Pizza {
         this.name = name;
     }
 
-    public void setAddon(String addon) {
-        this.addon = addon;
+    public void setAddon(ArrayList<String> addons) {
+        this.addons = addons;
     }
 
     public void setSize(String size) {
@@ -49,26 +60,5 @@ public class Pizza {
     public int hashCode() {
         int hash = 3;
         return hash;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Pizza other = (Pizza) obj;
-        if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
-        if (!Objects.equals(this.addon, other.addon)) {
-            return false;
-        }
-        return Objects.equals(this.size, other.size);
     }
 }

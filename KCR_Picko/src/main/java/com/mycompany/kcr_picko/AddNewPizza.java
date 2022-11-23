@@ -4,6 +4,13 @@
  */
 package com.mycompany.kcr_picko;
 
+import java.awt.Label;
+import java.util.ArrayList;
+import javax.swing.DefaultListModel;
+import java.text.DecimalFormat;
+import javax.swing.JOptionPane;
+
+
 /**
  *
  * @author yannick
@@ -13,6 +20,13 @@ public class AddNewPizza extends javax.swing.JFrame {
     private double pizzaValue;
     private double dodatkiValue;
     private double sizeValue;
+    
+    private String pizzaName;
+    private ArrayList<String> addons;
+    private String pizzaSize;
+    
+    private static final DecimalFormat df = new DecimalFormat("0.00");
+
 
     /**
      * Creates new form AddNewPizza
@@ -23,6 +37,18 @@ public class AddNewPizza extends javax.swing.JFrame {
         pizzaValue = 0.0;
         sizeValue = 0.0;
         dodatkiValue = 0.0;
+        
+        pizzaName = "";
+        addons = new ArrayList<String>();
+        pizzaSize = "Srednja";
+        
+        srednjaRadioButton.setSelected(true);
+    }
+    
+    private boolean noPizzaSelected(){
+        return !(margaritaRadioButton.isSelected() || klasicanRadioButton.isSelected()
+                || kraskaRadioButton.isSelected() || hawaiiRadioButton.isSelected()
+                || pekocaRadioButton.isSelected() || morskaRadioButton.isSelected());
     }
     
     private void uncheckAllAddons(){
@@ -66,12 +92,12 @@ public class AddNewPizza extends javax.swing.JFrame {
         prsutCheckBox = new javax.swing.JCheckBox();
         paprikaCheckBox = new javax.swing.JCheckBox();
         jLabel4 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
+        margaritaRadioButton = new javax.swing.JRadioButton();
+        kraskaRadioButton = new javax.swing.JRadioButton();
+        klasicanRadioButton = new javax.swing.JRadioButton();
+        pekocaRadioButton = new javax.swing.JRadioButton();
+        hawaiiRadioButton = new javax.swing.JRadioButton();
+        morskaRadioButton = new javax.swing.JRadioButton();
         malaRadioButton = new javax.swing.JRadioButton();
         srednjaRadioButton = new javax.swing.JRadioButton();
         velikaRadioButton = new javax.swing.JRadioButton();
@@ -170,51 +196,51 @@ public class AddNewPizza extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel4.setText("Velikost:");
 
-        pizzeButtonGroup.add(jRadioButton1);
-        jRadioButton1.setText("Margarita");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        pizzeButtonGroup.add(margaritaRadioButton);
+        margaritaRadioButton.setText("Margarita");
+        margaritaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                margaritaRadioButtonActionPerformed(evt);
             }
         });
 
-        pizzeButtonGroup.add(jRadioButton2);
-        jRadioButton2.setText("Kraška");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        pizzeButtonGroup.add(kraskaRadioButton);
+        kraskaRadioButton.setText("Kraška");
+        kraskaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                kraskaRadioButtonActionPerformed(evt);
             }
         });
 
-        pizzeButtonGroup.add(jRadioButton3);
-        jRadioButton3.setText("Klasična");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+        pizzeButtonGroup.add(klasicanRadioButton);
+        klasicanRadioButton.setText("Klasična");
+        klasicanRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
+                klasicanRadioButtonActionPerformed(evt);
             }
         });
 
-        pizzeButtonGroup.add(jRadioButton4);
-        jRadioButton4.setText("Pekoča");
-        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+        pizzeButtonGroup.add(pekocaRadioButton);
+        pekocaRadioButton.setText("Pekoča");
+        pekocaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton4ActionPerformed(evt);
+                pekocaRadioButtonActionPerformed(evt);
             }
         });
 
-        pizzeButtonGroup.add(jRadioButton5);
-        jRadioButton5.setText("Hawaii");
-        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
+        pizzeButtonGroup.add(hawaiiRadioButton);
+        hawaiiRadioButton.setText("Hawaii");
+        hawaiiRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton5ActionPerformed(evt);
+                hawaiiRadioButtonActionPerformed(evt);
             }
         });
 
-        pizzeButtonGroup.add(jRadioButton6);
-        jRadioButton6.setText("Morska");
-        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
+        pizzeButtonGroup.add(morskaRadioButton);
+        morskaRadioButton.setText("Morska");
+        morskaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton6ActionPerformed(evt);
+                morskaRadioButtonActionPerformed(evt);
             }
         });
 
@@ -330,25 +356,25 @@ public class AddNewPizza extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(21, 21, 21)
                                         .addComponent(margaritaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jRadioButton1))
+                                    .addComponent(margaritaRadioButton))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton2)
+                                    .addComponent(kraskaRadioButton)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(21, 21, 21)
                                         .addComponent(kraskaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton3)
+                                    .addComponent(klasicanRadioButton)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(21, 21, 21)
                                         .addComponent(klasicnaPrice)))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jRadioButton4)
+                                        .addComponent(pekocaRadioButton)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jRadioButton5))
+                                        .addComponent(hawaiiRadioButton))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(21, 21, 21)
                                         .addComponent(pekocaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -359,7 +385,7 @@ public class AddNewPizza extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(21, 21, 21)
                                         .addComponent(morskaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jRadioButton6)))
+                                    .addComponent(morskaRadioButton)))
                             .addComponent(jLabel4)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(srednjaRadioButton)
@@ -374,12 +400,12 @@ public class AddNewPizza extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton3)
-                    .addComponent(jRadioButton4)
-                    .addComponent(jRadioButton5)
-                    .addComponent(jRadioButton6))
+                    .addComponent(margaritaRadioButton)
+                    .addComponent(kraskaRadioButton)
+                    .addComponent(klasicanRadioButton)
+                    .addComponent(pekocaRadioButton)
+                    .addComponent(hawaiiRadioButton)
+                    .addComponent(morskaRadioButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(margaritaPrice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -409,13 +435,14 @@ public class AddNewPizza extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(malaRadioButton)
-                    .addComponent(jLabel5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel8)
                         .addComponent(cenaValue)
-                        .addComponent(jLabel10)))
+                        .addComponent(jLabel10))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(malaRadioButton)
+                        .addComponent(jLabel5)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(srednjaRadioButton)
@@ -443,160 +470,210 @@ public class AddNewPizza extends javax.swing.JFrame {
     private void koruzaCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_koruzaCheckBoxActionPerformed
         if (koruzaCheckBox.isSelected()){
             dodatkiValue += 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+            addons.add(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
         }
         else{
             dodatkiValue -= 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));    
+            addons.remove(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));    
         }
     }//GEN-LAST:event_koruzaCheckBoxActionPerformed
 
     private void jajceCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jajceCheckBoxActionPerformed
+          
         if (jajceCheckBox.isSelected()){
             dodatkiValue += 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+            addons.add(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
         }
         else{
             dodatkiValue -= 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));    
+            addons.remove(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));    
         }
     }//GEN-LAST:event_jajceCheckBoxActionPerformed
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void margaritaRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_margaritaRadioButtonActionPerformed
         double margaritaValue = Double.parseDouble(margaritaPrice.getText().split(" ")[0]);
                 
         pizzaValue = margaritaValue;
+        pizzaName = "Margarita";
         
-        cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
-
+        cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
+    }//GEN-LAST:event_margaritaRadioButtonActionPerformed
+    
     private void dodajButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dodajButtonActionPerformed
-        // TODO add your handling code here:
+        
+        if (noPizzaSelected()) {
+            JOptionPane.showMessageDialog(null, "Prosim izperite pico ali kliknite Prekliči.");
+        }
+        else {
+            Pizza pizza = new Pizza(pizzaName, addons, pizzaSize, pizzaValue + dodatkiValue + sizeValue);
+        
+            String addonsStr = pizza.getAddon().toString();
+        
+            String pizzaItem = String.format("%s %s ... Dodtaki: %s ... %s EUR",
+                    pizza.getSize(), pizza.getName(), addonsStr.substring(1, addonsStr.length() - 1), df.format(pizza.getCena()));
+        
+        
+            MainMenu.model.addElement(pizzaItem);
+            MainMenu.pizzaList.setModel(MainMenu.model);
+            MainMenu.pizzaObjList.add(pizza);
+        
+            double trenutnaSkupnaCena = Double.parseDouble(MainMenu.skupnaCena.getText());
+            MainMenu.skupnaCena.setText(df.format(trenutnaSkupnaCena + pizza.getCena()));
+        
+            this.dispose();   
+        }
     }//GEN-LAST:event_dodajButtonActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void kraskaRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kraskaRadioButtonActionPerformed
         double kraskaValue = Double.parseDouble(kraskaPrice.getText().split(" ")[0]);
         
         pizzaValue = kraskaValue;
+        pizzaName = "Kraška";
         
         cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    }//GEN-LAST:event_kraskaRadioButtonActionPerformed
 
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+    private void klasicanRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_klasicanRadioButtonActionPerformed
         double klasicnaValue = Double.parseDouble(klasicnaPrice.getText().split(" ")[0]);
         
         pizzaValue = klasicnaValue;
+        pizzaName = "Klasična";
         
-        cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
+        cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
+    }//GEN-LAST:event_klasicanRadioButtonActionPerformed
 
-    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+    private void pekocaRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pekocaRadioButtonActionPerformed
         double pekocaValue = Double.parseDouble(pekocaPrice.getText().split(" ")[0]);
         
         pizzaValue = pekocaValue;
+        pizzaName = "Pekoča";
         
-        cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
-    }//GEN-LAST:event_jRadioButton4ActionPerformed
+        cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
+    }//GEN-LAST:event_pekocaRadioButtonActionPerformed
 
-    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
+    private void hawaiiRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hawaiiRadioButtonActionPerformed
         double hawaiiValue = Double.parseDouble(hawaiiPrice.getText().split(" ")[0]);
         
         pizzaValue = hawaiiValue;
+        pizzaName = "Hawaii";
         
-        cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
-    }//GEN-LAST:event_jRadioButton5ActionPerformed
+        cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
+    }//GEN-LAST:event_hawaiiRadioButtonActionPerformed
 
-    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
+    private void morskaRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_morskaRadioButtonActionPerformed
         double morskaValue = Double.parseDouble(morskaPrice.getText().split(" ")[0]);
         
         pizzaValue = morskaValue;
+        pizzaName = "Morska";
         
-        cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
-    }//GEN-LAST:event_jRadioButton6ActionPerformed
+        cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
+    }//GEN-LAST:event_morskaRadioButtonActionPerformed
 
     private void malaRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_malaRadioButtonActionPerformed
         sizeValue = -1.0;
-        cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+        pizzaSize = "Mala";
+        cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
     }//GEN-LAST:event_malaRadioButtonActionPerformed
 
     private void srednjaRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_srednjaRadioButtonActionPerformed
         sizeValue = 0.0;
-        cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+        pizzaSize = "Srednja";
+        cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
     }//GEN-LAST:event_srednjaRadioButtonActionPerformed
 
     private void velikaRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_velikaRadioButtonActionPerformed
         sizeValue = 2.0;
-        cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+        pizzaSize = "Velika";
+        cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
     }//GEN-LAST:event_velikaRadioButtonActionPerformed
 
     private void buckeCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buckeCheckBoxActionPerformed
         if (buckeCheckBox.isSelected()){
             dodatkiValue += 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+            addons.add(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
         }
         else{
             dodatkiValue -= 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));    
+            addons.remove(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));    
         }
     }//GEN-LAST:event_buckeCheckBoxActionPerformed
 
     private void prsutCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prsutCheckBoxActionPerformed
+       
+        System.out.println(addons.toString());
+        
         if (prsutCheckBox.isSelected()){
             dodatkiValue += 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+            addons.add(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
         }
         else{
             dodatkiValue -= 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));    
+            addons.remove(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));    
         }
     }//GEN-LAST:event_prsutCheckBoxActionPerformed
 
     private void kislaSmetanaCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kislaSmetanaCheckBoxActionPerformed
         if (kislaSmetanaCheckBox.isSelected()){
             dodatkiValue += 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+            addons.add(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
         }
         else{
             dodatkiValue -= 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));    
+            addons.remove(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));    
         }
     }//GEN-LAST:event_kislaSmetanaCheckBoxActionPerformed
 
     private void articokeCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_articokeCheckBoxActionPerformed
         if (articokeCheckBox.isSelected()){
             dodatkiValue += 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+            addons.add(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
         }
         else{
             dodatkiValue -= 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));    
+            addons.remove(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));    
         }
     }//GEN-LAST:event_articokeCheckBoxActionPerformed
 
     private void cebulaCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cebulaCheckBoxActionPerformed
         if (cebulaCheckBox.isSelected()){
             dodatkiValue += 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+            addons.add(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
         }
         else{
             dodatkiValue -= 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));    
+            addons.remove(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));    
         }
     }//GEN-LAST:event_cebulaCheckBoxActionPerformed
 
     private void paprikaCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paprikaCheckBoxActionPerformed
         if (paprikaCheckBox.isSelected()){
             dodatkiValue += 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));
+            addons.add(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));
         }
         else{
             dodatkiValue -= 1.5;
-            cenaValue.setText(Double.toString(pizzaValue + dodatkiValue + sizeValue));    
+            addons.remove(evt.getActionCommand());
+            cenaValue.setText(df.format(pizzaValue + dodatkiValue + sizeValue));    
         }
     }//GEN-LAST:event_paprikaCheckBoxActionPerformed
 
     private void dodajButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dodajButton1ActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_dodajButton1ActionPerformed
 
     /**
@@ -642,6 +719,7 @@ public class AddNewPizza extends javax.swing.JFrame {
     private javax.swing.JButton dodajButton;
     private javax.swing.JButton dodajButton1;
     private javax.swing.JLabel hawaiiPrice;
+    private javax.swing.JRadioButton hawaiiRadioButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -652,22 +730,21 @@ public class AddNewPizza extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
     private javax.swing.JCheckBox jajceCheckBox;
     private javax.swing.JCheckBox kislaSmetanaCheckBox;
+    private javax.swing.JRadioButton klasicanRadioButton;
     private javax.swing.JLabel klasicnaPrice;
     private javax.swing.JCheckBox koruzaCheckBox;
     private javax.swing.JLabel kraskaPrice;
+    private javax.swing.JRadioButton kraskaRadioButton;
     private javax.swing.JRadioButton malaRadioButton;
     private javax.swing.JLabel margaritaPrice;
+    private javax.swing.JRadioButton margaritaRadioButton;
     private javax.swing.JLabel morskaPrice;
+    private javax.swing.JRadioButton morskaRadioButton;
     private javax.swing.JCheckBox paprikaCheckBox;
     private javax.swing.JLabel pekocaPrice;
+    private javax.swing.JRadioButton pekocaRadioButton;
     private javax.swing.ButtonGroup pizzeButtonGroup;
     private javax.swing.JCheckBox prsutCheckBox;
     private javax.swing.ButtonGroup sizeButtonGroup;
