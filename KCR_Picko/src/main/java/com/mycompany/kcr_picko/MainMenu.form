@@ -153,6 +153,7 @@
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Dodaj Pico"/>
+        <Property name="toolTipText" type="java.lang.String" value="Odpre dialog za dodajanje pic."/>
       </Properties>
       <AccessibilityProperties>
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="DodajPicoButton"/>
@@ -178,18 +179,24 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="imeTextField">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Vnseite ime naro&#x10d;nika."/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="imeTextFieldActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="priimekTextField">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Vnseite priimek naro&#x10d;nika."/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="priimekTextFieldActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="naslovTextField">
       <Properties>
-        <Property name="toolTipText" type="java.lang.String" value="Naslov"/>
+        <Property name="toolTipText" type="java.lang.String" value="Vnseite naslov naro&#x10d;nika."/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="naslovTextFieldActionPerformed"/>
@@ -207,6 +214,7 @@
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
               <StringArray count="0"/>
             </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Seznam pic. Za odstranitev morate eno izbrati in klikniti gumb Odstrani pico."/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -251,6 +259,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Ali &#x17e;elite koristiti &#x161;tudentski bon?"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox1ActionPerformed"/>
       </Events>
@@ -258,6 +269,7 @@
     <Component class="javax.swing.JButton" name="odstraniPicoButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Odstrani Pico"/>
+        <Property name="toolTipText" type="java.lang.String" value="Odstrani izbrano pico iz naro&#x10d;ila."/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="odstraniPicoButtonActionPerformed"/>
@@ -268,6 +280,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
         </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Zaklju&#x10d;i naro&#x10d;ilo."/>
         <Property name="label" type="java.lang.String" value="Naro&#x10d;i"/>
       </Properties>
       <Events>
@@ -280,6 +293,7 @@
           <Font name="Dialog" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Prekli&#x10d;i"/>
+        <Property name="toolTipText" type="java.lang.String" value="Prekli&#x10d;i naro&#x10d;ilo."/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>

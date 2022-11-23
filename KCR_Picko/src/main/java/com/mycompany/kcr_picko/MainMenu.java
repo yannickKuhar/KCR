@@ -53,6 +53,7 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel1.setText("Picko");
 
         jButton1.setText("Dodaj Pico");
+        jButton1.setToolTipText("Odpre dialog za dodajanje pic.");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -66,25 +67,28 @@ public class MainMenu extends javax.swing.JFrame {
 
         jLabel4.setText("Naslov:");
 
+        imeTextField.setToolTipText("Vnseite ime naročnika.");
         imeTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 imeTextFieldActionPerformed(evt);
             }
         });
 
+        priimekTextField.setToolTipText("Vnseite priimek naročnika.");
         priimekTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 priimekTextFieldActionPerformed(evt);
             }
         });
 
-        naslovTextField.setToolTipText("Naslov");
+        naslovTextField.setToolTipText("Vnseite naslov naročnika.");
         naslovTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 naslovTextFieldActionPerformed(evt);
             }
         });
 
+        pizzaList.setToolTipText("Seznam pic. Za odstranitev morate eno izbrati in klikniti gumb Odstrani pico.");
         jScrollPane1.setViewportView(pizzaList);
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -99,6 +103,7 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel6.setText("Študentski Bon:");
 
+        jCheckBox1.setToolTipText("Ali želite koristiti študentski bon?");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
@@ -106,6 +111,7 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         odstraniPicoButton.setText("Odstrani Pico");
+        odstraniPicoButton.setToolTipText("Odstrani izbrano pico iz naročila.");
         odstraniPicoButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 odstraniPicoButtonActionPerformed(evt);
@@ -113,6 +119,7 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton2.setToolTipText("Zaključi naročilo.");
         jButton2.setLabel("Naroči");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,6 +129,7 @@ public class MainMenu extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButton3.setText("Prekliči");
+        jButton3.setToolTipText("Prekliči naročilo.");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -288,6 +296,12 @@ public class MainMenu extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Prosim dodajte pice.");
             return;
         }
+        
+        Narocilo narocilo = new Narocilo(ime, priimek, naslov, pizzaObjList);
+        
+        JOptionPane.showMessageDialog(null, "Pice uspešno naročene.");
+        
+        System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

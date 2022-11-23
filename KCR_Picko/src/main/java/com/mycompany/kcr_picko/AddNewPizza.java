@@ -529,7 +529,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         
             String addonsStr = pizza.getAddon().toString();
         
-            String pizzaItem = String.format("%s %s ... Dodtaki: %s ... %s EUR",
+            String pizzaItem = String.format("%s %s ... Dodatki: %s ... %s EUR",
                     pizza.getSize(), pizza.getName(), addonsStr.substring(1, addonsStr.length() - 1), df.format(pizza.getCena()));
         
         
