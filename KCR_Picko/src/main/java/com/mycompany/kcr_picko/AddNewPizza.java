@@ -137,6 +137,7 @@ public class AddNewPizza extends javax.swing.JFrame {
 
         jLabel3.setText("+ 1.50 € Na vsak dodatek.");
 
+        koruzaCheckBox.setForeground(new java.awt.Color(0, 153, 255));
         koruzaCheckBox.setText("Koruza");
         koruzaCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,6 +145,7 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        kislaSmetanaCheckBox.setForeground(new java.awt.Color(0, 153, 255));
         kislaSmetanaCheckBox.setText("Kisla Smetana");
         kislaSmetanaCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,6 +153,7 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        jajceCheckBox.setForeground(new java.awt.Color(0, 153, 255));
         jajceCheckBox.setText("Jajce");
         jajceCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -158,6 +161,7 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        articokeCheckBox.setForeground(new java.awt.Color(0, 153, 255));
         articokeCheckBox.setText("Artičoke");
         articokeCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -165,6 +169,7 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        buckeCheckBox.setForeground(new java.awt.Color(0, 153, 255));
         buckeCheckBox.setText("Bučke");
         buckeCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,6 +177,7 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        cebulaCheckBox.setForeground(new java.awt.Color(0, 153, 255));
         cebulaCheckBox.setText("Čebula");
         cebulaCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -179,6 +185,7 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        prsutCheckBox.setForeground(new java.awt.Color(0, 153, 255));
         prsutCheckBox.setText("Pršut");
         prsutCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -186,6 +193,7 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        paprikaCheckBox.setForeground(new java.awt.Color(0, 153, 255));
         paprikaCheckBox.setText("Paprika");
         paprikaCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -197,6 +205,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         jLabel4.setText("Velikost:");
 
         pizzeButtonGroup.add(margaritaRadioButton);
+        margaritaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
         margaritaRadioButton.setText("Margarita");
         margaritaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,6 +214,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         pizzeButtonGroup.add(kraskaRadioButton);
+        kraskaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
         kraskaRadioButton.setText("Kraška");
         kraskaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -213,6 +223,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         pizzeButtonGroup.add(klasicanRadioButton);
+        klasicanRadioButton.setForeground(new java.awt.Color(0, 153, 255));
         klasicanRadioButton.setText("Klasična");
         klasicanRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -221,6 +232,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         pizzeButtonGroup.add(pekocaRadioButton);
+        pekocaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
         pekocaRadioButton.setText("Pekoča");
         pekocaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -229,6 +241,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         pizzeButtonGroup.add(hawaiiRadioButton);
+        hawaiiRadioButton.setForeground(new java.awt.Color(0, 153, 255));
         hawaiiRadioButton.setText("Hawaii");
         hawaiiRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -237,6 +250,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         pizzeButtonGroup.add(morskaRadioButton);
+        morskaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
         morskaRadioButton.setText("Morska");
         morskaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,6 +259,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         sizeButtonGroup.add(malaRadioButton);
+        malaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
         malaRadioButton.setText("Mala");
         malaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -253,6 +268,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         sizeButtonGroup.add(srednjaRadioButton);
+        srednjaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
         srednjaRadioButton.setText("Srednja");
         srednjaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -261,6 +277,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         sizeButtonGroup.add(velikaRadioButton);
+        velikaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
         velikaRadioButton.setText("Velika");
         velikaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -310,43 +327,25 @@ public class AddNewPizza extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(kislaSmetanaCheckBox)
-                                    .addComponent(koruzaCheckBox))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jajceCheckBox)
-                                    .addComponent(articokeCheckBox))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(buckeCheckBox)
-                                    .addComponent(cebulaCheckBox))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(prsutCheckBox)
-                                    .addComponent(paprikaCheckBox)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(malaRadioButton)
+                                .addComponent(srednjaRadioButton)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel5))
+                                .addComponent(jLabel6))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(velikaRadioButton)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel7)))
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(29, 29, 29)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(dodajButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(dodajButton1))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(jLabel8)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cenaValue)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel10))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(dodajButton)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(dodajButton1)
+                                .addComponent(jLabel10)
                                 .addContainerGap())))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -357,41 +356,60 @@ public class AddNewPizza extends javax.swing.JFrame {
                                         .addGap(21, 21, 21)
                                         .addComponent(margaritaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(margaritaRadioButton))
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(kraskaRadioButton)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(kraskaRadioButton)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(klasicanRadioButton))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(21, 21, 21)
-                                        .addComponent(kraskaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(klasicanRadioButton)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(21, 21, 21)
+                                        .addComponent(kraskaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
                                         .addComponent(klasicnaPrice)))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(pekocaRadioButton)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(hawaiiRadioButton))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(21, 21, 21)
-                                        .addComponent(pekocaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(hawaiiPrice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .addGap(18, 18, 18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(21, 21, 21)
-                                        .addComponent(morskaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(morskaRadioButton)))
+                                        .addComponent(pekocaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(pekocaRadioButton))
+                                .addGap(0, 0, 0)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(hawaiiRadioButton)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(morskaRadioButton))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(21, 21, 21)
+                                        .addComponent(hawaiiPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(morskaPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addComponent(jLabel4)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(srednjaRadioButton)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(kislaSmetanaCheckBox)
+                                            .addComponent(koruzaCheckBox))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jajceCheckBox)
+                                            .addComponent(articokeCheckBox))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(buckeCheckBox)
+                                            .addComponent(cebulaCheckBox))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(prsutCheckBox)
+                                            .addComponent(paprikaCheckBox)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(malaRadioButton)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel5)))
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel6)))
-                        .addContainerGap())))
+                                .addComponent(jLabel3)))
+                        .addGap(49, 49, 49))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -435,18 +453,16 @@ public class AddNewPizza extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel8)
-                        .addComponent(cenaValue)
-                        .addComponent(jLabel10))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(malaRadioButton)
-                        .addComponent(jLabel5)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(malaRadioButton)
+                    .addComponent(jLabel5))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(srednjaRadioButton)
-                    .addComponent(jLabel6))
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel8)
+                    .addComponent(cenaValue)
+                    .addComponent(jLabel10))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(velikaRadioButton)
