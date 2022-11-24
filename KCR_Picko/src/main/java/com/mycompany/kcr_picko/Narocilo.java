@@ -13,12 +13,14 @@ public class Narocilo {
     private String ime;
     private String Priimek;
     private String naslov;
+    private String nacinPlacila;
     private ArrayList<Pizza> pizze;
 
-    public Narocilo(String ime, String Priimek, String naslov, ArrayList<Pizza> pizze) {
+    public Narocilo(String ime, String Priimek, String naslov, String nacinPlacila, ArrayList<Pizza> pizze) {
         this.ime = ime;
         this.Priimek = Priimek;
         this.naslov = naslov;
+        this.nacinPlacila = nacinPlacila;
         this.pizze = pizze;
     }
 
