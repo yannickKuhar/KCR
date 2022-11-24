@@ -422,7 +422,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -478,7 +478,7 @@ public class AddNewPizza extends javax.swing.JFrame {
                     .addComponent(jLabel7)
                     .addComponent(dodajButton)
                     .addComponent(dodajButton1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         margaritaPrice.getAccessibleContext().setAccessibleName("MargaritaPriceLabel");
