@@ -42,7 +42,7 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel1" max="32767" attributes="0"/>
+                  <Component id="piceLAbel" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -108,7 +108,7 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="dodatkiLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -138,7 +138,6 @@
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
                                               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="srednjaRadioButton" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -171,15 +170,17 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <Component id="piceLAbel" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="margaritaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="kraskaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="klasicanRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="pekocaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="hawaiiRadioButton" alignment="0" min="-2" pref="22" max="-2" attributes="0"/>
-                  <Component id="morskaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="margaritaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="kraskaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="klasicanRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="pekocaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="morskaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -191,7 +192,7 @@
                   <Component id="hawaiiPrice" alignment="3" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <Component id="dodatkiLabel" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -224,7 +225,6 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="srednjaRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cenaValue" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -242,24 +242,36 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="piceLAbel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Pice:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="dodatkiLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Dodatki:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="margaritaPrice">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="7.90  &#x20ac;"/>
       </Properties>
       <AccessibilityProperties>
@@ -268,6 +280,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="pekocaPrice">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="9.30  &#x20ac;"/>
       </Properties>
       <AccessibilityProperties>
@@ -276,6 +294,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="kraskaPrice">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="9.80  &#x20ac;"/>
       </Properties>
       <AccessibilityProperties>
@@ -284,6 +308,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="morskaPrice">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="9.70  &#x20ac;"/>
       </Properties>
       <AccessibilityProperties>
@@ -293,6 +323,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="klasicnaPrice">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="9.00  &#x20ac;"/>
       </Properties>
       <AccessibilityProperties>
@@ -301,6 +337,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="hawaiiPrice">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="8.90  &#x20ac;"/>
       </Properties>
       <AccessibilityProperties>
@@ -309,13 +351,19 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="+ 1.50 &#x20ac; Na vsak dodatek."/>
       </Properties>
     </Component>
     <Component class="javax.swing.JCheckBox" name="koruzaCheckBox">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Koruza"/>
       </Properties>
@@ -325,8 +373,11 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="kislaSmetanaCheckBox">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Kisla Smetana"/>
       </Properties>
@@ -336,8 +387,11 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="jajceCheckBox">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Jajce"/>
       </Properties>
@@ -347,8 +401,11 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="articokeCheckBox">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Arti&#x10d;oke"/>
       </Properties>
@@ -358,8 +415,11 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="buckeCheckBox">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Bu&#x10d;ke"/>
       </Properties>
@@ -369,8 +429,11 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="cebulaCheckBox">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#x10c;ebula"/>
       </Properties>
@@ -380,8 +443,11 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="prsutCheckBox">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Pr&#x161;ut"/>
       </Properties>
@@ -391,8 +457,11 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="paprikaCheckBox">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Paprika"/>
       </Properties>
@@ -405,16 +474,22 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Velikost:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="margaritaRadioButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="pizzeButtonGroup"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Margarita"/>
       </Properties>
@@ -424,11 +499,14 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="kraskaRadioButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="pizzeButtonGroup"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Kra&#x161;ka"/>
       </Properties>
@@ -438,11 +516,14 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="klasicanRadioButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="pizzeButtonGroup"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Klasi&#x10d;na"/>
       </Properties>
@@ -452,11 +533,14 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="pekocaRadioButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="pizzeButtonGroup"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Peko&#x10d;a"/>
       </Properties>
@@ -466,11 +550,14 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="hawaiiRadioButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="pizzeButtonGroup"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Hawaii"/>
       </Properties>
@@ -480,11 +567,14 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="morskaRadioButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="pizzeButtonGroup"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Morska"/>
       </Properties>
@@ -494,11 +584,14 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="malaRadioButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="sizeButtonGroup"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Mala"/>
       </Properties>
@@ -508,11 +601,14 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="srednjaRadioButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="sizeButtonGroup"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Srednja"/>
       </Properties>
@@ -522,11 +618,14 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="velikaRadioButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="sizeButtonGroup"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="0" type="rgb"/>
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Velika"/>
       </Properties>
@@ -536,31 +635,47 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="- 1.00 &#x20ac;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="+ 0.00 &#x20ac;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="+ 2.00 &#x20ac;"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Dialog" size="18" style="1"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Cena: "/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="+ 2.00 &#x20ac;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="dodajButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9a" green="a7" red="a5" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Dodaj"/>
       </Properties>
@@ -573,6 +688,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="0.00"/>
       </Properties>
     </Component>
@@ -581,13 +699,22 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value=" &#x20ac;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="dodajButton1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9a" green="a7" red="a5" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Prekli&#x10d;i"/>
       </Properties>
@@ -599,6 +726,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Cena:"/>
       </Properties>

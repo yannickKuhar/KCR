@@ -21,6 +21,8 @@ public class MainMenu extends javax.swing.JFrame {
      */
     public MainMenu() {
         initComponents();
+        
+        this.getContentPane().setBackground(new java.awt.Color(236, 164, 66));
     }
     
     @SuppressWarnings("unchecked")
@@ -49,12 +51,16 @@ public class MainMenu extends javax.swing.JFrame {
         nacinPlacilaComboBox = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(236, 164, 66));
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(97, 18, 14));
         jLabel1.setText("Picko");
 
+        jButton1.setBackground(new java.awt.Color(165, 167, 154));
         jButton1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(97, 18, 14));
         jButton1.setText("Dodaj Pico");
         jButton1.setToolTipText("Odpre dialog za dodajanje pic.");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -63,13 +69,18 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setForeground(new java.awt.Color(97, 18, 14));
         jLabel2.setText("Ime:");
 
+        jLabel3.setForeground(new java.awt.Color(97, 18, 14));
         jLabel3.setText("Priimek:");
         jLabel3.setToolTipText("");
 
+        jLabel4.setForeground(new java.awt.Color(97, 18, 14));
         jLabel4.setText("Naslov:");
 
+        imeTextField.setBackground(new java.awt.Color(165, 167, 154));
+        imeTextField.setForeground(new java.awt.Color(202, 37, 33));
         imeTextField.setToolTipText("Vnseite ime naročnika.");
         imeTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,6 +88,8 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
+        priimekTextField.setBackground(new java.awt.Color(165, 167, 154));
+        priimekTextField.setForeground(new java.awt.Color(202, 37, 33));
         priimekTextField.setToolTipText("Vnseite priimek naročnika.");
         priimekTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,6 +97,8 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
+        naslovTextField.setBackground(new java.awt.Color(165, 167, 154));
+        naslovTextField.setForeground(new java.awt.Color(202, 37, 33));
         naslovTextField.setToolTipText("Vnseite naslov naročnika.");
         naslovTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,21 +106,29 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
+        pizzaList.setBackground(new java.awt.Color(165, 167, 154));
+        pizzaList.setForeground(new java.awt.Color(97, 18, 14));
         pizzaList.setToolTipText("Seznam pic. Za odstranitev morate eno izbrati in klikniti gumb Odstrani pico.");
         jScrollPane1.setViewportView(pizzaList);
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(97, 18, 14));
         jLabel5.setText("Skupna Cena:");
 
         skupnaCena.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        skupnaCena.setForeground(new java.awt.Color(202, 37, 33));
         skupnaCena.setText("0.00");
 
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(202, 37, 33));
         jLabel7.setText(" €");
 
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(97, 18, 14));
         jLabel6.setText("Študentski Bon:");
 
+        jCheckBox1.setBackground(new java.awt.Color(236, 164, 66));
+        jCheckBox1.setForeground(new java.awt.Color(202, 37, 33));
         jCheckBox1.setToolTipText("Ali želite koristiti študentski bon?");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +136,9 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
+        odstraniPicoButton.setBackground(new java.awt.Color(165, 167, 154));
         odstraniPicoButton.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        odstraniPicoButton.setForeground(new java.awt.Color(97, 18, 14));
         odstraniPicoButton.setText("Odstrani Pico");
         odstraniPicoButton.setToolTipText("Odstrani izbrano pico iz naročila.");
         odstraniPicoButton.addActionListener(new java.awt.event.ActionListener() {
@@ -122,7 +147,9 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(165, 167, 154));
         jButton2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(97, 18, 14));
         jButton2.setToolTipText("Zaključi naročilo.");
         jButton2.setLabel("Naroči");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -131,7 +158,9 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setBackground(new java.awt.Color(165, 167, 154));
         jButton3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(97, 18, 14));
         jButton3.setText("Prekliči");
         jButton3.setToolTipText("Prekliči naročilo.");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -141,11 +170,19 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(97, 18, 14));
         jLabel8.setText("Način Plačila:");
         jLabel8.setToolTipText("Izberite gotovino ali kartico.");
 
+        nacinPlacilaComboBox.setBackground(new java.awt.Color(165, 167, 154));
         nacinPlacilaComboBox.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        nacinPlacilaComboBox.setForeground(new java.awt.Color(202, 37, 33));
         nacinPlacilaComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gotovina", "Kartica" }));
+        nacinPlacilaComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nacinPlacilaComboBoxActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -272,15 +309,18 @@ public class MainMenu extends javax.swing.JFrame {
     private void odstraniPicoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_odstraniPicoButtonActionPerformed
         int selectedIndex = pizzaList.getSelectedIndex();
         
+        if (selectedIndex == -1) {
+            JOptionPane.showMessageDialog(null, "Ne morem odstranit pice. Seznam je prazen.");
+            return;
+        }
+        
         double cenaSelected = pizzaObjList.get(selectedIndex).getCena();
         double trenutnaSkupnaCena = Double.parseDouble(MainMenu.skupnaCena.getText());
         
         skupnaCena.setText(df.format(trenutnaSkupnaCena - cenaSelected));
         
-        if (selectedIndex != -1) {
-            model.remove(selectedIndex);
-            pizzaObjList.remove(selectedIndex);
-        }
+        model.remove(selectedIndex);
+        pizzaObjList.remove(selectedIndex);
     }//GEN-LAST:event_odstraniPicoButtonActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -319,6 +359,10 @@ public class MainMenu extends javax.swing.JFrame {
         
         System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void nacinPlacilaComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nacinPlacilaComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nacinPlacilaComboBoxActionPerformed
 
     /**
      * @param args the command line arguments

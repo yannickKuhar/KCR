@@ -3,6 +3,9 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="42" green="a4" red="ec" type="rgb"/>
+    </Property>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
@@ -150,13 +153,22 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="24" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Picko"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9a" green="a7" red="a5" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Dodaj Pico"/>
         <Property name="toolTipText" type="java.lang.String" value="Odpre dialog za dodajanje pic."/>
@@ -170,22 +182,37 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ime:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Priimek:"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Naslov:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="imeTextField">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9a" green="a7" red="a5" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
+        </Property>
         <Property name="toolTipText" type="java.lang.String" value="Vnseite ime naro&#x10d;nika."/>
       </Properties>
       <Events>
@@ -194,6 +221,12 @@
     </Component>
     <Component class="javax.swing.JTextField" name="priimekTextField">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9a" green="a7" red="a5" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
+        </Property>
         <Property name="toolTipText" type="java.lang.String" value="Vnseite priimek naro&#x10d;nika."/>
       </Properties>
       <Events>
@@ -202,6 +235,12 @@
     </Component>
     <Component class="javax.swing.JTextField" name="naslovTextField">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9a" green="a7" red="a5" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
+        </Property>
         <Property name="toolTipText" type="java.lang.String" value="Vnseite naslov naro&#x10d;nika."/>
       </Properties>
       <Events>
@@ -217,6 +256,12 @@
       <SubComponents>
         <Component class="javax.swing.JList" name="pizzaList">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="9a" green="a7" red="a5" type="rgb"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="e" green="12" red="61" type="rgb"/>
+            </Property>
             <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
               <StringArray count="0"/>
             </Property>
@@ -234,6 +279,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Skupna Cena:"/>
       </Properties>
     </Component>
@@ -241,6 +289,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="0.00"/>
       </Properties>
@@ -253,6 +304,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value=" &#x20ac;"/>
       </Properties>
     </Component>
@@ -261,11 +315,20 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="&#x160;tudentski Bon:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JCheckBox" name="jCheckBox1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="42" green="a4" red="ec" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
+        </Property>
         <Property name="toolTipText" type="java.lang.String" value="Ali &#x17e;elite koristiti &#x161;tudentski bon?"/>
       </Properties>
       <Events>
@@ -274,8 +337,14 @@
     </Component>
     <Component class="javax.swing.JButton" name="odstraniPicoButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9a" green="a7" red="a5" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Odstrani Pico"/>
         <Property name="toolTipText" type="java.lang.String" value="Odstrani izbrano pico iz naro&#x10d;ila."/>
@@ -286,8 +355,14 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9a" green="a7" red="a5" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
         </Property>
         <Property name="toolTipText" type="java.lang.String" value="Zaklju&#x10d;i naro&#x10d;ilo."/>
         <Property name="label" type="java.lang.String" value="Naro&#x10d;i"/>
@@ -298,8 +373,14 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9a" green="a7" red="a5" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Prekli&#x10d;i"/>
         <Property name="toolTipText" type="java.lang.String" value="Prekli&#x10d;i naro&#x10d;ilo."/>
@@ -313,6 +394,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="e" green="12" red="61" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Na&#x10d;in Pla&#x10d;ila:"/>
         <Property name="toolTipText" type="java.lang.String" value="Izberite gotovino ali kartico."/>
       </Properties>
@@ -322,8 +406,14 @@
     </Component>
     <Component class="javax.swing.JComboBox" name="nacinPlacilaComboBox">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9a" green="a7" red="a5" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Dialog" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="21" green="25" red="ca" type="rgb"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="2">
@@ -332,6 +422,9 @@
           </StringArray>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nacinPlacilaComboBoxActionPerformed"/>
+      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>

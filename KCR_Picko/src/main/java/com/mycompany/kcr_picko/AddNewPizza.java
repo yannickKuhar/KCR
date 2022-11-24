@@ -43,6 +43,8 @@ public class AddNewPizza extends javax.swing.JFrame {
         pizzaSize = "Srednja";
         
         srednjaRadioButton.setSelected(true);
+        
+        this.getContentPane().setBackground(new java.awt.Color(236, 164, 66));
     }
     
     private boolean noPizzaSelected(){
@@ -74,8 +76,8 @@ public class AddNewPizza extends javax.swing.JFrame {
         pizzeButtonGroup = new javax.swing.ButtonGroup();
         sizeButtonGroup = new javax.swing.ButtonGroup();
         jLabel9 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        piceLAbel = new javax.swing.JLabel();
+        dodatkiLabel = new javax.swing.JLabel();
         margaritaPrice = new javax.swing.JLabel();
         pekocaPrice = new javax.swing.JLabel();
         kraskaPrice = new javax.swing.JLabel();
@@ -104,7 +106,6 @@ public class AddNewPizza extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         dodajButton = new javax.swing.JButton();
         cenaValue = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -118,27 +119,43 @@ public class AddNewPizza extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel1.setText("Pice:");
+        piceLAbel.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        piceLAbel.setForeground(new java.awt.Color(97, 18, 14));
+        piceLAbel.setText("Pice:");
 
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel2.setText("Dodatki:");
+        dodatkiLabel.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        dodatkiLabel.setForeground(new java.awt.Color(97, 18, 14));
+        dodatkiLabel.setText("Dodatki:");
 
+        margaritaPrice.setBackground(new java.awt.Color(236, 164, 66));
+        margaritaPrice.setForeground(new java.awt.Color(97, 18, 14));
         margaritaPrice.setText("7.90  €");
 
+        pekocaPrice.setBackground(new java.awt.Color(236, 164, 66));
+        pekocaPrice.setForeground(new java.awt.Color(97, 18, 14));
         pekocaPrice.setText("9.30  €");
 
+        kraskaPrice.setBackground(new java.awt.Color(236, 164, 66));
+        kraskaPrice.setForeground(new java.awt.Color(97, 18, 14));
         kraskaPrice.setText("9.80  €");
 
+        morskaPrice.setBackground(new java.awt.Color(236, 164, 66));
+        morskaPrice.setForeground(new java.awt.Color(97, 18, 14));
         morskaPrice.setText("9.70  €");
 
+        klasicnaPrice.setBackground(new java.awt.Color(236, 164, 66));
+        klasicnaPrice.setForeground(new java.awt.Color(97, 18, 14));
         klasicnaPrice.setText("9.00  €");
 
+        hawaiiPrice.setBackground(new java.awt.Color(236, 164, 66));
+        hawaiiPrice.setForeground(new java.awt.Color(97, 18, 14));
         hawaiiPrice.setText("8.90  €");
 
+        jLabel3.setForeground(new java.awt.Color(97, 18, 14));
         jLabel3.setText("+ 1.50 € Na vsak dodatek.");
 
-        koruzaCheckBox.setForeground(new java.awt.Color(0, 153, 255));
+        koruzaCheckBox.setBackground(new java.awt.Color(236, 164, 66));
+        koruzaCheckBox.setForeground(new java.awt.Color(202, 37, 33));
         koruzaCheckBox.setText("Koruza");
         koruzaCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,7 +163,8 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
-        kislaSmetanaCheckBox.setForeground(new java.awt.Color(0, 153, 255));
+        kislaSmetanaCheckBox.setBackground(new java.awt.Color(236, 164, 66));
+        kislaSmetanaCheckBox.setForeground(new java.awt.Color(202, 37, 33));
         kislaSmetanaCheckBox.setText("Kisla Smetana");
         kislaSmetanaCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,7 +172,8 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
-        jajceCheckBox.setForeground(new java.awt.Color(0, 153, 255));
+        jajceCheckBox.setBackground(new java.awt.Color(236, 164, 66));
+        jajceCheckBox.setForeground(new java.awt.Color(202, 37, 33));
         jajceCheckBox.setText("Jajce");
         jajceCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,7 +181,8 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
-        articokeCheckBox.setForeground(new java.awt.Color(0, 153, 255));
+        articokeCheckBox.setBackground(new java.awt.Color(236, 164, 66));
+        articokeCheckBox.setForeground(new java.awt.Color(202, 37, 33));
         articokeCheckBox.setText("Artičoke");
         articokeCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,7 +190,8 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
-        buckeCheckBox.setForeground(new java.awt.Color(0, 153, 255));
+        buckeCheckBox.setBackground(new java.awt.Color(236, 164, 66));
+        buckeCheckBox.setForeground(new java.awt.Color(202, 37, 33));
         buckeCheckBox.setText("Bučke");
         buckeCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,7 +199,8 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
-        cebulaCheckBox.setForeground(new java.awt.Color(0, 153, 255));
+        cebulaCheckBox.setBackground(new java.awt.Color(236, 164, 66));
+        cebulaCheckBox.setForeground(new java.awt.Color(202, 37, 33));
         cebulaCheckBox.setText("Čebula");
         cebulaCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -186,7 +208,8 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
-        prsutCheckBox.setForeground(new java.awt.Color(0, 153, 255));
+        prsutCheckBox.setBackground(new java.awt.Color(236, 164, 66));
+        prsutCheckBox.setForeground(new java.awt.Color(202, 37, 33));
         prsutCheckBox.setText("Pršut");
         prsutCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,7 +217,8 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
-        paprikaCheckBox.setForeground(new java.awt.Color(0, 153, 255));
+        paprikaCheckBox.setBackground(new java.awt.Color(236, 164, 66));
+        paprikaCheckBox.setForeground(new java.awt.Color(202, 37, 33));
         paprikaCheckBox.setText("Paprika");
         paprikaCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -203,10 +227,12 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(97, 18, 14));
         jLabel4.setText("Velikost:");
 
+        margaritaRadioButton.setBackground(new java.awt.Color(236, 164, 66));
         pizzeButtonGroup.add(margaritaRadioButton);
-        margaritaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
+        margaritaRadioButton.setForeground(new java.awt.Color(202, 37, 33));
         margaritaRadioButton.setText("Margarita");
         margaritaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -214,8 +240,9 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        kraskaRadioButton.setBackground(new java.awt.Color(236, 164, 66));
         pizzeButtonGroup.add(kraskaRadioButton);
-        kraskaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
+        kraskaRadioButton.setForeground(new java.awt.Color(202, 37, 33));
         kraskaRadioButton.setText("Kraška");
         kraskaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -223,8 +250,9 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        klasicanRadioButton.setBackground(new java.awt.Color(236, 164, 66));
         pizzeButtonGroup.add(klasicanRadioButton);
-        klasicanRadioButton.setForeground(new java.awt.Color(0, 153, 255));
+        klasicanRadioButton.setForeground(new java.awt.Color(202, 37, 33));
         klasicanRadioButton.setText("Klasična");
         klasicanRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -232,8 +260,9 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        pekocaRadioButton.setBackground(new java.awt.Color(236, 164, 66));
         pizzeButtonGroup.add(pekocaRadioButton);
-        pekocaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
+        pekocaRadioButton.setForeground(new java.awt.Color(202, 37, 33));
         pekocaRadioButton.setText("Pekoča");
         pekocaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -241,8 +270,9 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        hawaiiRadioButton.setBackground(new java.awt.Color(236, 164, 66));
         pizzeButtonGroup.add(hawaiiRadioButton);
-        hawaiiRadioButton.setForeground(new java.awt.Color(0, 153, 255));
+        hawaiiRadioButton.setForeground(new java.awt.Color(202, 37, 33));
         hawaiiRadioButton.setText("Hawaii");
         hawaiiRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -250,8 +280,9 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        morskaRadioButton.setBackground(new java.awt.Color(236, 164, 66));
         pizzeButtonGroup.add(morskaRadioButton);
-        morskaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
+        morskaRadioButton.setForeground(new java.awt.Color(202, 37, 33));
         morskaRadioButton.setText("Morska");
         morskaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -259,8 +290,9 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        malaRadioButton.setBackground(new java.awt.Color(236, 164, 66));
         sizeButtonGroup.add(malaRadioButton);
-        malaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
+        malaRadioButton.setForeground(new java.awt.Color(202, 37, 33));
         malaRadioButton.setText("Mala");
         malaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -268,8 +300,9 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        srednjaRadioButton.setBackground(new java.awt.Color(236, 164, 66));
         sizeButtonGroup.add(srednjaRadioButton);
-        srednjaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
+        srednjaRadioButton.setForeground(new java.awt.Color(202, 37, 33));
         srednjaRadioButton.setText("Srednja");
         srednjaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -277,8 +310,9 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        velikaRadioButton.setBackground(new java.awt.Color(236, 164, 66));
         sizeButtonGroup.add(velikaRadioButton);
-        velikaRadioButton.setForeground(new java.awt.Color(0, 153, 255));
+        velikaRadioButton.setForeground(new java.awt.Color(202, 37, 33));
         velikaRadioButton.setText("Velika");
         velikaRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -286,16 +320,21 @@ public class AddNewPizza extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setBackground(new java.awt.Color(236, 164, 66));
+        jLabel5.setForeground(new java.awt.Color(97, 18, 14));
         jLabel5.setText("- 1.00 €");
 
+        jLabel6.setBackground(new java.awt.Color(236, 164, 66));
+        jLabel6.setForeground(new java.awt.Color(97, 18, 14));
         jLabel6.setText("+ 0.00 €");
 
+        jLabel7.setBackground(new java.awt.Color(236, 164, 66));
+        jLabel7.setForeground(new java.awt.Color(97, 18, 14));
         jLabel7.setText("+ 2.00 €");
 
-        jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel8.setText("Cena: ");
-
+        dodajButton.setBackground(new java.awt.Color(165, 167, 154));
         dodajButton.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        dodajButton.setForeground(new java.awt.Color(202, 37, 33));
         dodajButton.setText("Dodaj");
         dodajButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -304,12 +343,16 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         cenaValue.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        cenaValue.setForeground(new java.awt.Color(202, 37, 33));
         cenaValue.setText("0.00");
 
         jLabel10.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(202, 37, 33));
         jLabel10.setText(" €");
 
+        dodajButton1.setBackground(new java.awt.Color(165, 167, 154));
         dodajButton1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        dodajButton1.setForeground(new java.awt.Color(202, 37, 33));
         dodajButton1.setText("Prekliči");
         dodajButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -318,6 +361,7 @@ public class AddNewPizza extends javax.swing.JFrame {
         });
 
         jLabel11.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(202, 37, 33));
         jLabel11.setText("Cena:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -327,7 +371,7 @@ public class AddNewPizza extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(piceLAbel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -378,7 +422,7 @@ public class AddNewPizza extends javax.swing.JFrame {
                                 .addComponent(dodajButton1))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
+                                    .addComponent(dodatkiLabel)
                                     .addComponent(jLabel4)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -402,7 +446,6 @@ public class AddNewPizza extends javax.swing.JFrame {
                                                 .addComponent(malaRadioButton)
                                                 .addGap(18, 18, 18)
                                                 .addComponent(jLabel5))
-                                            .addComponent(jLabel8)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(srednjaRadioButton)
                                                 .addGap(18, 18, 18)
@@ -423,15 +466,16 @@ public class AddNewPizza extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(piceLAbel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(margaritaRadioButton)
-                    .addComponent(kraskaRadioButton)
-                    .addComponent(klasicanRadioButton)
-                    .addComponent(pekocaRadioButton)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(hawaiiRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(morskaRadioButton))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(margaritaRadioButton)
+                        .addComponent(kraskaRadioButton)
+                        .addComponent(klasicanRadioButton)
+                        .addComponent(pekocaRadioButton)
+                        .addComponent(morskaRadioButton)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(margaritaPrice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -441,7 +485,7 @@ public class AddNewPizza extends javax.swing.JFrame {
                     .addComponent(pekocaPrice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(hawaiiPrice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(dodatkiLabel)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -468,7 +512,6 @@ public class AddNewPizza extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(srednjaRadioButton)
                     .addComponent(jLabel6)
-                    .addComponent(jLabel8)
                     .addComponent(cenaValue)
                     .addComponent(jLabel10)
                     .addComponent(jLabel11))
@@ -743,18 +786,16 @@ public class AddNewPizza extends javax.swing.JFrame {
     private javax.swing.JLabel cenaValue;
     private javax.swing.JButton dodajButton;
     private javax.swing.JButton dodajButton1;
+    private javax.swing.JLabel dodatkiLabel;
     private javax.swing.JLabel hawaiiPrice;
     private javax.swing.JRadioButton hawaiiRadioButton;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JCheckBox jajceCheckBox;
     private javax.swing.JCheckBox kislaSmetanaCheckBox;
@@ -771,6 +812,7 @@ public class AddNewPizza extends javax.swing.JFrame {
     private javax.swing.JCheckBox paprikaCheckBox;
     private javax.swing.JLabel pekocaPrice;
     private javax.swing.JRadioButton pekocaRadioButton;
+    private javax.swing.JLabel piceLAbel;
     private javax.swing.ButtonGroup pizzeButtonGroup;
     private javax.swing.JCheckBox prsutCheckBox;
     private javax.swing.ButtonGroup sizeButtonGroup;
